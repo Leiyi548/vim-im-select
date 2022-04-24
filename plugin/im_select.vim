@@ -28,7 +28,7 @@ if !exists('g:im_select_get_im_cmd') || !exists('g:ImSelectSetImCmd')
     let is_mac = has('mac') || has('macunix') || has('osx') || has('osxdarwin')
     if is_windows || is_mac
         if !exists('g:im_select_command')
-            let cmd = exepath('im-select')
+            let cmd = exepath('im-select.exe')
             if cmd == ''
                 echohl ErrorMsg | echomsg 'im-select is not found on your system. Please refer to https://github.com/daipeihust/im-select' | echohl None
                 finish
